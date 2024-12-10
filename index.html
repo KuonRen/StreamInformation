@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>参加型配信に参加するにあたって</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff5722;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #ff5722;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .rules {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ff5722;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+    }
+
+    .rules h2 {
+      font-size: 20px;
+      color: #ff5722;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .rules h2:hover {
+      color: #ffffff;
+    }
+
+    .rules ul {
+      list-style: none;
+      padding: 0;
+      display: none; /* 初期状態では非表示 */
+    }
+
+    .rules ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #1e1e1e;
+      border-top: 2px solid #ff5722;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ff5722;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* モーダルスタイル */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      display: none; /* 初期状態では非表示 */
+    }
+
+    .modal-content {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      max-height: 80%;
+      overflow: hidden;
+    }
+
+    .privacy-policy {
+      padding: 20px;
+      background-color: #1e1e1e;
+      border: 1px solid #ff5722;
+      border-radius: 5px;
+      color: #ffffff;
+      margin: 0 auto;
+      max-height: 60vh;
+      overflow-y: auto; /* 内容部分のみスクロール可能 */
+    }
+
+    .privacy-policy h2 {
+      color: #ff5722;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .privacy-policy ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+
+    .privacy-policy ul ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+
+    .privacy-policy strong {
+      color: #ff5722;
+    }
+
+    /* モーダル閉じるボタンのスタイル */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff5722; /* 明るいオレンジ */
+      color: #ffffff;
+      font-size: 24px;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s; /* アニメーション追加 */
+    }
+
+    .close-btn:hover {
+      background-color: #ff7043; /* ホバー時に色を変更 */
+      transform: scale(1.1); /* ボタンを少し大きく */
+    }
+
+    .close-btn:focus {
+      outline: none; /* フォーカス時の枠線を削除 */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>参加型配信に参加するにあたって</h1>
+  </header>
+
+  <main>
+
+
+    <section class="rules">
+      <h2>ルール</h2>
+      <ul>
+        <li>誹謗中傷や暴言は禁止しています。</li>
+        <li>他の参加者へのリスペクト(尊重)を忘れないでください。</li>
+        <li>指示やコメントのスパム行為は控えてください。</li>
+        <li>私が提示するルールを守ってください。</li>
+      </ul>
+    </section>
+
+
+    <section class="rules">
+      <h2>注意事項</h2>
+      <ul>
+        <li>個人情報の共有は絶対に避けてください。</li>
+        <li>配信のアーカイブに映る可能性があることを理解してください。</li>
+        <li>問題行動があった場合、即退場となる可能性があります。</li>
+      </ul>
+    </section>
+
+
+    <section class="rules">
+      <h2>参加方法</h2>
+      <ul>
+
+    	<section class="rules">
+      	<h2>マイクラ</h2>
+     	    <ul>
+      	    <li>① 参加希望とコメントする(無言参加は即キック)。</li>
+     	      <li>② サーバーを追加から下記のIPとポートを入力する(バージョンは基本何でもいいです)。
+		          <p><strong>　・Java版:</strong> 182.165.222.62:25565</p>
+    	    	  <p><strong>　・統合版:</strong> IPアドレス：182.165.222.62 / ポート番号：19132</p>
+    	    	  <p><strong>　・バージョン:</strong> 基本的にどのバージョンでも接続可能</p>
+    	    	  <p>　※参加後チャットにユーチューブの名前をコメントしてください。（初めて接続する場合のみ）</p>
+    	    	  <p>　※二回目以降は参加希望だけでOKです。</p></li>
+      	    <li>③ 抜ける際は一言書いてから抜けること(無言退出は非表示対象)。</li>
+
+
+          <section class="rules">
+            <h2>switch / PS　の参加方法</h2>
+              <ul>
+                <li><h3>・switch</h3></li>
+                <li>　ユーチューブで「switch マイクラ外部サーバー 参加方法」と検索して調べてください。</li>
+                <li><h3>・PS(プレイステーション)</h3></li>
+	              <li>　<a href="https://novablog.work/be-join-any-server/#toc4" target="_blank">他サイト引用 S[Novaの日記様]</a></li>
+              </ul>
+            </section>
+          </ul>
+      </section>
+
+      <section class="rules">
+        <h2>VALORANT</h2>
+          <ul>
+            <li>① 記載中 </li>
+            <li>② 記載中</li>
+            <li>③ 記載中</li>
+      </section>
+
+    
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 久遠 蓮 | <a id="privacy-link">プライバシーポリシー</a></p>
+  </footer>
+
+  <!-- プライバシーポリシーのモーダル -->
+  <div class="modal" id="privacy-modal">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <section class="privacy-policy">
+        <h2>プライバシーポリシー</h2>
+        <ul>
+          <li>
+            <strong>1. 個人情報の収集について</strong>
+            <ul>
+              <li>当サイトでは、お問い合わせフォームやコメント欄を通じて必要に応じてお名前やメールアドレスを収集する場合があります。</li>
+              <li>サイトの利用状況を分析するために匿名データ（アクセス数、ブラウザ情報など）を収集する場合があります。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>2. 収集した情報の利用目的</strong>
+            <ul>
+              <li>問い合わせ対応や必要なご連絡のため</li>
+              <li>サイトの利便性向上やコンテンツ改善のため</li>
+              <li>不正行為や規約違反の調査や対処のため</li>
+            </ul>
+          </li>
+          <li>
+            <strong>3. 情報の管理について</strong>
+            <ul>
+              <li>収集した個人情報は適切に管理し、無断で第三者に共有することはありません（法令に基づく場合を除く）。</li>
+              <li>不要となった情報は速やかに削除します。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>4. 第三者提供について</strong>
+            <ul>
+              <li>個人情報を第三者に提供することはありません。ただし、以下の場合を除きます：</li>
+              <ul>
+                <li>ユーザーの同意がある場合</li>
+                <li>法令に基づく要請があった場合</li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <strong>5. クッキー（Cookie）の利用について</strong>
+            <ul>
+              <li>当サイトでは、利便性向上やアクセス解析のためにクッキーを使用する場合があります。</li>
+              <li>クッキーの使用はブラウザ設定で無効にすることが可能です。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>6. 外部リンクについて</strong>
+            <ul>
+              <li>当サイトには外部リンクが含まれる場合があります。リンク先のプライバシーポリシーについては当サイトでは責任を負いかねますので、各サイトをご確認ください。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>7. プライバシーポリシーの変更について</strong>
+            <ul>
+              <li>本ポリシーは予告なく改定される場合があります。最新の内容は当サイトに掲載いたします。</li>
+            </ul>
+          </li>
+          <li>
+            <strong>8. お問い合わせについて</strong>
+            <ul>
+              <li>本ポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</li>
+              <li><strong>例: h4sukun83.stream@gmail.com</strong></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const privacyLink = document.getElementById('privacy-link');
+      const privacyModal = document.getElementById('privacy-modal');
+      const closeModal = document.getElementById('close-modal');
+      const ruleHeadings = document.querySelectorAll('.rules h2');
+      
+      // モーダルの表示・非表示
+      privacyLink.addEventListener('click', () => {
+        privacyModal.style.display = 'flex';
+      });
+
+      closeModal.addEventListener('click', () => {
+        privacyModal.style.display = 'none';
+      });
+
+      // モーダル外をクリックして閉じる
+      privacyModal.addEventListener('click', (event) => {
+        if (event.target === privacyModal) {
+          privacyModal.style.display = 'none';
+        }
+      });
+
+      // ルールや注意事項のリスト表示制御
+      ruleHeadings.forEach(heading => {
+        heading.addEventListener('click', () => {
+          const ul = heading.nextElementSibling;
+          if (ul.style.display === 'none' || ul.style.display === '') {
+            ul.style.display = 'block';
+          } else {
+            ul.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
